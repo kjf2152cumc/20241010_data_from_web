@@ -1,0 +1,40 @@
+Data from Web
+================
+Kaleb J. Frierson
+2024-10-10
+
+# Notes
+
+There are two components when looking at a website:
+
+HTML code with all the information for structure and content (ML =
+markup language).
+
+CSS styling side produces what you see.
+
+There are challenges with extracting what you want from an HTML file.
+You have to pick out the pieces you want. A big piece of getting data
+from the web is using a CSS selector: how do you look at a website and
+figure out from that website what is the correct css tag to give you the
+actual data that you want and none of the data you don’t want.
+
+- Selector Gadget is the most common tool for finidng the right CSS
+  selector on a page. In a browser, you go to the page you care about,
+  launch SG, click on the things you want. rvest package helps scrape
+  data from the web.
+
+Workflow:
+
+download HTML using read_html () ()
+
+OR
+
+In contrast to scraping, you can use an application programming
+interface (API) which provides a way to communicate with software. Web
+APIs may give you a way to request specific data from a server. Some API
+have a download option for CSV. Sometimes this isn’t ideal when data
+changes all the time and you could have code that ALWAYS grabs the most
+current data and then can run an UTD report.
+
+Data from the web is messy, it will take a lot of work to figure it out
+and get it tidy.
